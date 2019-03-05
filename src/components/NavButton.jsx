@@ -1,4 +1,5 @@
 import React from 'react';
+import PropTypes from 'prop-types';
 
 function NavButton(props) {
   return (
@@ -7,5 +8,9 @@ function NavButton(props) {
     </div>
   );
 }
+
+NavButton.propTypes = {
+  buttonName: PropTypes.string
+};
 
 export default NavButton;
