@@ -3,27 +3,42 @@ import BGPhoto from './BGPhoto';
 import ProfilePhoto from './ProfilePhoto';
 
 function ProfileBox() {
+
+  var profilePanelPosition = {
+    position: 'relative',
+    top: '-70 ',
+    left: '-15',
+    marginBottom: '-20'
+  }
+
+  var profileNameStyle = {
+    position: 'relative',
+    top: '60',
+    fontSize: '30',
+    fontWeight: '450',
+    padding: '24 20 4 24',
+    lineHeight: '.9'
+  }
+
   return (
-    <div className="row">
-      <div className="col s12 m7">
-        <div className="card">
-          <div className="card-image">
-            <BGPhoto/>
-            <div className="row">
-              <div className="col s4">
+    <div>
+      <div className="row">
+        <div className="col s12">
+          <div className="card">
+            <div className="card-image">
+              <BGPhoto/>
+            </div>
+            <div className="card-content row" style={profilePanelPosition}>
+              <div className="col s5 card-image">
                 <ProfilePhoto/>
               </div>
-              <div className="col s8">
-              Kelli Brooke
+              <div className="col s7" style={profileNameStyle}>
+                Kelli Brooke
               </div>
             </div>
-          </div>
-          <div className="card-content">
-            <p>I am a very simple card. I am good at containing small bits of information.
-            I am convenient because I require little markup to use effectively.</p>
-          </div>
-          <div className="card-action">
-            <a href="#">This is a link</a>
+            <div className="card-action">
+              <a href="#">This is a link</a>
+            </div>
           </div>
         </div>
       </div>
