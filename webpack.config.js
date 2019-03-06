@@ -18,7 +18,7 @@ module.exports = {
   },
 
   resolve: {
-    extensions: [ '.js', '.jsx' ]
+    extensions: [ '.js', '.jsx', '.jpg' ]
   },
 
   devtool: '#source-map',
@@ -45,7 +45,17 @@ module.exports = {
           ]
         }
       },
-    ],
+      {
+        test: /\.(png|gif|jp(e*)g|svg)$/,
+        use: {
+          loader: 'url-loader',
+          options: {
+            limit: 8000,
+            name: 'images/[hash]-[name].[ext]'
+          }
+        }
+      }
+    ]
   },
 
     plugins: [
@@ -54,8 +64,8 @@ module.exports = {
       new HtmlWebpackPlugin({
       template:'template.ejs',
       appMountId: 'react-app-root',
-      title: 'React Help Queue',
+      title: 'Social Media Clone',
       filename: resolve(__dirname, "build", "index.html"),
     }),
     ]
-};
+}
