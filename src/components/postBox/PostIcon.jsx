@@ -1,5 +1,5 @@
 import React from 'react';
-import profilePhoto from '../assets/images/profilePhoto.png';
+import postPhoto from '../assets/images/postPhoto.png';
 
 function PostIcon() {
 
@@ -11,7 +11,7 @@ function PostIcon() {
   }
 
   return (
-    <img style={postIconStyle} src={profilePhoto}/>
+    <img style={postIconStyle} src={postPhoto}/>
   );
 }
 

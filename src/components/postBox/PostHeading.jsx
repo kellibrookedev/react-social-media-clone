@@ -10,7 +10,7 @@ function PostHeading() {
     padding: '5'
   }
   return (
-    <div className="row card" style={divStyle}>
+    <div className="row card red lighten-4" style={divStyle}>
       <div className="col s2 card-image">
         <PostIcon/>
       </div>
