@@ -24,7 +24,7 @@ function ProfileBox() {
     <div>
       <div className="row">
         <div className="col s12">
-          <div className="card">
+          <div className="card teal lighten-5">
             <div className="card-image">
               <BGPhoto/>
             </div>
