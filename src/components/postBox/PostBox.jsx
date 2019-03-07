@@ -1,9 +1,10 @@
 import React from 'react';
+import PostHeading from './PostHeading';
 
 function PostBox() {
   return (
     <div>
-      Post Box!
+      <PostHeading/>
     </div>
   );
 }
