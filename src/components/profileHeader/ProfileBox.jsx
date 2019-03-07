@@ -14,7 +14,7 @@ function ProfileBox() {
   var profileNameStyle = {
     position: 'relative',
     top: '60',
-    fontSize: '30',
+    fontSize: '3vw',
     fontWeight: '450',
     padding: '24 20 4 24',
     lineHeight: '.9'
@@ -37,7 +37,8 @@ function ProfileBox() {
               </div>
             </div>
             <div className="card-action">
-              <a href="#">This is a link</a>
+              <a href="#">Following(20)</a>
+              <a href="#">Followers(215)</a>
             </div>
           </div>
         </div>
